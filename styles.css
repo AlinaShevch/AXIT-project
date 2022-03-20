@@ -11,10 +11,11 @@
 }
 
 .header__logo {
-    padding-left: 115.28px;
+    padding-left: 115px;
 }
 
 .header__menu {
+    width: 50%;
     line-height: 75px;
     color: #FFFFFF;
     font-family: 'Open Sans';
@@ -23,27 +24,35 @@
 }
 
 .header__menu-list {
-    width: 570px;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 170px;
+    width: 15%;
+    display: inline-block;
+    text-align: center;
+}
+
+.header__menu-list:hover {
+    background: #EC7979;
+}
+
+.header__menu-list:active {
+    background: #AB4949;
 }
 
 .banner {
-    position: relative;
     width: 1510px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images\ banner/image.jpg);
     font-family: 'Raleway';
     margin: 0 auto;
 }
 
-.banner__logo-image {
-    padding-top: 231px;
-    padding-bottom: 72.88px;
+.banner__container {
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
 }
 
-.banner__logo-image:first-child {
-    padding-left: 170px;
+.banner__logo-image {
+    padding-top: 231px;
+    padding-bottom: 72px;
 }
 
 .banner__title {
@@ -51,14 +60,13 @@
     font-weight: 500;
     font-size: 48px;
     color: #FFFFFF;
-    margin-left: 170px;
-    margin-bottom: 55.12px;
+    margin-bottom: 55px;
+    line-height: 56px;
 }
 
 .banner__line {
     width: 170px;
     border-top: 2px solid #FFFFFF;
-    margin-left: 170px;
     margin-bottom: 42px;
 }
 
@@ -67,7 +75,6 @@
     font-weight: 400px;
     color: #FFFFFF;
     width: 270px;
-    margin-left: 170px;
     margin-bottom: 42px;
 }
 
@@ -80,14 +87,23 @@
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
     background-color: transparent;
-    margin-left: 170px;
     margin-bottom: 185px;
+}
+
+.banner__button:hover, .design__button:hover {
+    border-color: #EC7979;
+    color: #EC7979;
+}
+
+.banner__button:active, .design__button:active {
+    background: #AB4949;
+    color: #FFFFFF;
 }
 
 .banner__form {
     position: absolute;
     top: 208px;
-    right: 170px;
+    right: 0;
     width: 470px;
     height: 450px;
     background: #FFFFFF;
@@ -95,13 +111,19 @@
     font-family: 'Open Sans';
 }
 
+.banner__title-wrapper {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
 .banner__form-title {
     font-size: 24px;
     font-weight: 700;
     text-align: center;
     color: #333333;
-    margin-top: 33px;
-    margin-bottom: 78px;
 }
 
 .banner__color {
@@ -131,7 +153,7 @@
 }
 
 .banner__form-button {
-    width: 470px;
+    width: 100%;
     height: 60px;
     margin-top: 42px;
     font-size: 15px;
@@ -140,6 +162,15 @@
     background-color: #EC7979;
     border: none;
     border-radius: 0 0 10px 10px;
+}
+
+.banner__form-button:hover {
+    background: #AB4949;
+}
+
+.banner__form-button:active {
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
 }
 
 .social {
@@ -238,7 +269,7 @@
     margin-bottom: 20px;
 }
 
-.tabs__button {
+.tabs__button, .contacts__button {
     width: 270px;
     height: 58px;
     margin-left: 100px;
@@ -251,18 +282,27 @@
     color: white;
 }
 
+.tabs__button:hover, .contacts__button:hover {
+    background: #AB4949;
+}
+
+.tabs__button:active, .contacts__button:active {
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
 .awesome {
     font-family: 'Raleway', sans-serif;
     width: 1170px;
     margin: 0 auto;
 }
 
-.awesome__title, .price__title, .customers__title, .design__title {
+.awesome__title, .price__title, .customers__title, .design__title, .contacts__title {
     font-size: 36px;
     font-weight: 400;
 }
 
-.awesome__title-wrapper, .price__title-wrapper, .customers__title-wrapper, .design__title-wrapper {
+.awesome__title-wrapper, .price__title-wrapper, .customers__title-wrapper, .design__title-wrapper, .contacts__title-wrapper {
     height: 150px;
     display: flex;
     align-items: center;
@@ -270,7 +310,7 @@
     padding-top: 50px;
 }
 
-.awesome__line, .price__line, .customers__line, .design__line {
+.awesome__line, .price__line, .customers__line, .design__line, .contacts__line {
     width: 170px;
     border-top: 2px solid #EC7979;
     margin: auto;
@@ -387,7 +427,7 @@
 }
     
 .price__list {
-    color: #86878B;;
+    color: #86878B;
     background-color: #FFFFFF;
 }
 
@@ -398,7 +438,7 @@
 }
 
 .customers__subtitle {
-    color:#86878B;
+    color: #86878B;
     font-size: 18px;
     text-align: center;
     margin-bottom: 83px;
@@ -483,6 +523,61 @@
     color: #FFFFFF;
     margin-bottom: 50px;
     margin-left: 570px;
+}
+
+.contacts {
+    width: 1170px;
+    margin: 0 auto;
+    font-family: 'Raleway';
+}
+
+.contacts__subtitle {
+    color: #86878B;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 89px;
+}
+
+.contacts__form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.contacts__form-container {
+    width: 570px;
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts__form-field {
+    width: 100%;
+    height: 46px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    outline: none;
+}
+
+.height {
+    padding-top: 16px;
+    height: 100%;
+}
+
+.contacts__form-field::placeholder {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    color: #BDBDBD;
+    margin-bottom: 16px;
+}
+
+.contacts__button {
+    width: 370px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .footer {
