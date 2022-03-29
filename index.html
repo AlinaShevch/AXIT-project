@@ -2,28 +2,90 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <section class="header">
+        <img class="header__logo" src="images banner/logo.png" alt="">
+        <ul class="header__menu">
+            <li class="header__menu-list">Features</li>
+            <li class="header__menu-list">About</li>
+            <li class="header__menu-list">Pricing</li>
+            <li class="header__menu-list">Reviews</li>
+            <li class="header__menu-list">Contact</li>
+        </ul>
+    </section>
+    <section class="banner">
+        <div class="banner__container">
+            <div class="banner__block">
+                <img class="banner__logo-image" src="images banner/AXIT (1).png" alt="">
+                <img class="banner__logo-image" src="images banner/AXIT.png" alt="">
+                <h1 class="banner__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                <div class="banner__line"></div>
+                <p class="banner__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+                <button class="banner__button">Download</button>
+            </div>
+            <form class="banner__form">
+                <div class="banner__title-wrapper">
+                    <p class="banner__form-title">
+                        TRY YOUR <span class="banner__color">FREE</span> TRIAL TODAY
+                    </p>
+                </div>
+                <ul class="banner__form-container">
+                      <input class="banner__form-field" type="text" name="user_name" placeholder="Name">
+                      <input class="banner__form-field" type="email" name="user_mail" placeholder="Email">
+                      <input class="banner__form-field" type='password' name="user_password" placeholder="Password"></input>
+                </ul>
+                <button class="banner__form-button">Get Started</button>
+            </form>
+        </div>
+    </section>
+    <section class="social">
+        <h2 class="social__title">Social Media</h2>
+        <p class="social__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean euismod bibendum laoreet.
+        </p>
+        <div class="social__icon-container">
+            <i class="fa fa-facebook social__icon fa-4x" aria-hidden="true"></i>
+            <i class="fa fa-twitter social__icon fa-4x" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square social__icon fa-4x" aria-hidden="true"></i>
+            <i class="fa fa-pinterest social__icon fa-4x" aria-hidden="true"></i>
+            <i class="fa fa-instagram social__icon fa-4x" aria-hidden="true"></i>
+            <i class="fa fa-github social__icon fa-4x" aria-hidden="true"></i>
+            <i class="fa fa-rss social__icon fa-4x" aria-hidden="true"></i>
+        </div>
+    </section>
     <section class="tabs">
         <div class="tabs__tabs-container">
-          <p class="tabs__tab-title">TAB 1</p>
-          <p class="tabs__tab-title">TAB 2</p> 
-          <p class="tabs__tab-title">TAB 3</p>  
+            <button class="tabs__tab-title">TAB 1</p>
+            <button class="tabs__tab-title">TAB 2</p> 
+            <button class="tabs__tab-title">TAB 3</p>  
         </div>
         <div class="tabs__container">
             <div class="tabs__title-wrapper">
                 <h3>Tabs with soft transitioning effect.</h3>
             </div>
             <div class="tabs__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br> 
-                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra<br> 
-                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                penatibus et magnis dis parturient montes.</p>  
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod<br> 
-                bibendum laoreet.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                </p>
+                <p>
+                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                </p> 
+                <p>
+                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                    penatibus et magnis dis parturient montes.
+                </p>  
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                </p>
             </div>
             <button class="tabs__button">Download</button>
         </div>
@@ -33,25 +95,37 @@
             <h2 class="awesome__title">WHY THIS IS AWESOME</h2>
         </div>
         <div class="awesome__line"></div>
-            <p class="awesome__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="awesome__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div class="awesome__container">
             <div class="awesome__block">
-                <div class='awesome__icon-wrapper'><img class='awesome__icon' src="images awesome/Vector (1).png" alt=""></div>
+                <div class="awesome__icon-wrapper">
+                    <img class="awesome__icon" src="images awesome/Vector (1).png" alt="">
+                </div>
                 <h4 class="awesome__block-title">Thoughtful Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+                <p class="awesome__block-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.
+                </p>
             </div>
             <div class="awesome__block">
-                <div class='awesome__icon-wrapper'><img class='awesome__icon' src="images awesome/Vector (1).jpg" alt=""></div>
+                <div class="awesome__icon-wrapper">
+                    <img class="awesome__icon" src="images awesome/Vector (1).jpg" alt="">
+                </div>
                 <h4 class="awesome__block-title">Thoughtful Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+                <p class="awesome__block-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.
+                </p>
             </div>
             <div class="awesome__block">
-                <div class='awesome__icon-wrapper'><img class='awesome__icon' src="images awesome/Vector (2).jpg" alt=""></div>
+                <div class="awesome__icon-wrapper">
+                    <img class="awesome__icon" src="images awesome/Vector (2).jpg" alt="">
+                </div>
                 <h4 class="awesome__block-title">Thoughtful Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+                <p class="awesome__block-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.
+                </p>
             </div>
         </div>
     </section>
@@ -110,44 +184,92 @@
         <div class="customers__container">
             <div class="customers__block">
                 <p class="customers__review">
-                    Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Doloribus<br> 
-                    accusamus expedita repellat similique<br> odio aspernatur ex, architecto eaque<br> 
+                    Lorem ipsum dolor sit amet,consectetur adipisicing elit. Doloribus
+                    accusamus expedita repellat similique odio aspernatur ex, architecto eaque
                     quo suscipit.
-                </p>
-                <div class="customers__triangle"></div>
-            <div class="customers__info">
-                <img class="customers__photo" src="images customers/Ellipse 7.png" alt="">
-                <p class="customers__name">Davis Rhiel Madsen</p>
-            </div>    
-                <p class="customers__position">Manager</p>
-            </div>
-            <div class="customers__block">
-                <p class="customers__review">
-                    Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Doloribus<br> 
-                    accusamus expedita repellat similique<br> odio aspernatur ex, architecto eaque<br> 
-                    quo suscipit. 
                 </p>
                 <div class="customers__triangle"></div>
                 <div class="customers__info">
-                <img class="customers__photo" src="images customers/Ellipse 7 (1).png" alt="">
-                <p class="customers__name">Jaydon Rosser</p>
-            </div>    
-                <p class="customers__position">Manager</p>
+                    <img class="customers__photo" src="images customers/Ellipse 7.png" alt="">
+                    <div class="customers__info-block">
+                        <p class="customers__name">Davis Rhiel Madsen</p>
+                        <p class="customers__position">Manager</p>
+                    </div> 
+                </div>   
             </div>
             <div class="customers__block">
                 <p class="customers__review">
-                    Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Doloribus<br> 
-                    accusamus expedita repellat similique<br> odio aspernatur ex, architecto eaque<br> 
+                    Lorem ipsum dolor sit amet,consectetur adipisicing elit. Doloribus
+                    accusamus expedita repellat similique odio aspernatur ex, architecto eaque
                     quo suscipit.
                 </p>
                 <div class="customers__triangle"></div>
-            <div class="customers__info">
-                <img class="customers__photo" src="images customers/Ellipse 7 (2).png" alt="">
-                <p class="customers__name">Cooper Dorwart</p>
-            </div>    
-                <p class="customers__position">Manager</p>
+                <div class="customers__info">
+                    <img class="customers__photo" src="images customers/Ellipse 7 (1).png" alt="">
+                    <div class="customers__info-block">
+                        <p class="customers__name">Jaydon Rosser</p>
+                        <p class="customers__position">Manager</p>
+                    </div>
+                </div>    
+            </div>
+            <div class="customers__block">
+                <p class="customers__review">
+                    Lorem ipsum dolor sit amet,consectetur adipisicing elit. Doloribus
+                    accusamus expedita repellat similique odio aspernatur ex, architecto eaque
+                    quo suscipit.
+                </p>
+                <div class="customers__triangle"></div>
+                <div class="customers__info">
+                    <img class="customers__photo" src="images customers/Ellipse 7 (2).png" alt="">
+                    <div class="customers__info-block">
+                        <p class="customers__name">Cooper Dorwart</p>
+                        <p class="customers__position">Manager</p>
+                    </div>
+                </div>    
             </div>
         </div>
+    </section>
+    <section class="design">
+        <div class="design__title-wrapper">
+            <h2 class="design__title">STYLISH AXURE DESIGN</h2>
+        </div>
+        <div class="design__line"></div>
+        <p class="design__subtitle">
+            Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!
+        </p>
+        <button class="design__button">Download</button>
+    </section>
+    <section class="contacts">
+        <div class="contacts__title-wrapper">
+            <h2 class="contacts__title">CONTACT US</h2>
+        </div>
+        <div class="contacts__line"></div>
+        <p class="contacts__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <form class="contacts__form">
+            <div class="contacts__form-container">
+                <input class="contacts__form-field" type="text" placeholder="Name">
+                <input class="contacts__form-field" type="email" placeholder="Email">
+                <input class="contacts__form-field" type="password" placeholder="Password">
+            </div>
+            <div class="contacts__form-container">
+                <textarea class="contacts__form-field height" placeholder="Message"></textarea>
+            </div>
+        </form>
+        <button class="contacts__button">Send Message</button>
+    </section>
+    <section class="footer">
+        <div class="footer__icon-container">
+            <i class="fa fa-facebook footer__icon fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-twitter footer__icon fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square footer__icon fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-pinterest footer__icon fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-instagram footer__icon fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-github footer__icon fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-rss footer__icon fa-3x" aria-hidden="true"></i>
+        </div>
+        <p class="footer__text">© 2015 Axure Themes</p>
     </section>
 </body>
 </html>
