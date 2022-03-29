@@ -622,7 +622,6 @@
         box-sizing: border-box;
         width: 100%;
         padding-left: 115px;
-        /* padding-right: 20px; */
     }
 
     .banner {
@@ -890,7 +889,6 @@
         width: 100%;
         font-size: 36px;
         line-height: 42px;
-        /* margin-top: 84px; */
         margin-bottom: 43px;
     }
 
@@ -1195,5 +1193,3 @@
         padding-bottom: 45px;
     }
 }
-
-
