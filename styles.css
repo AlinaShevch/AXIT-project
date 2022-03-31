@@ -210,8 +210,8 @@
     justify-content: space-between;
 }
 
-.social__icon, .footer__icon {
-    color: #CCCCCC;
+#social__icon, #footer__icon {
+    color: #CCCCCC; 
 }
 
 .tabs {
@@ -245,19 +245,25 @@
 }
 
 .tabs__container {
+    display: flex;
+    /* justify-content: space-between; */
     border: 1px solid #C6CBCD;
-    background: url(images\ tabs/image1.jpg) no-repeat right;
 }
 
-.tabs__title-wrapper {
-    width: 570px;
+.tabs__block {
+    width: 60%;
+    margin-right: 26px;
+}
+
+.tabs__title {
+    width: 80%;
     margin: 47px 0 74px 100px;
     font-weight: bold;
     font-size: 30px;
 }
 
 .tabs__text {
-    width: 50%;
+    width: 80%;
     font-family: 'Raleway';
     font-size: 18px;
     margin-left: 100px;
@@ -682,19 +688,13 @@
         width: 55%;
     }
 
-    .social__icon {
-        transform: scale(0.9);
+    #social__icon {
+        font-size: 50px;
     }
 
     .tabs {
         width: 96%;
     }
-
-    .tabs__container {
-        background-image: none;
-        background: url(images\ tabs/image.png) no-repeat right;
-        background-size: contain;
-    } 
 
     .tabs__tabs-container {
         padding-top: 70px;
@@ -705,11 +705,10 @@
     }
 
     .tabs__container {
-        background-size: contain;
+        min-height: 385px;
     }
 
-    .tabs__title-wrapper {
-        width: 40%;
+    .tabs__title {
         font-size: 24px;
         margin-top: 32px;
         margin-left: 84px;
@@ -726,6 +725,10 @@
         width: 230px;
         margin-left: 84px;
         margin-bottom: 50px;
+    }
+
+    .tabs__img {
+        height: 100%;
     }
 
     .awesome {
@@ -905,7 +908,7 @@
     }
 
     .banner__button {
-        width: 100%;
+        width: 288px;
         height: 50px;
         margin-bottom: 56px;
     }
@@ -955,21 +958,18 @@
 
     .social__icon-container {
         position: static;
-        width: 90%;
+        width: 100%;
         padding: 0;
+        padding-bottom: 45px;
     }
 
-    .social__icon, .footer__icon {
-        transform: scale(0.5);
+    #social__icon, #footer__icon {
+        font-size: 30px;
     }
 
     .tabs {
         width: 90%;
         text-align: center;
-    }
-
-    .tabs__container {
-        background: none;
     }
 
     .tabs__tabs-container {
@@ -980,8 +980,13 @@
         width: 100%;
     }
 
-    .tabs__title-wrapper {
-        width: 70%;
+    .tabs__block {
+        width: 100%;
+        margin: auto;
+    }
+
+    .tabs__title {
+        width: 90%;
         font-size: 18px;
         line-height: 24px;
         margin: 47px auto 74px auto;
@@ -1000,6 +1005,10 @@
         height: 50px;
         margin: auto;
         margin-bottom: 30px;
+    }
+
+    .tabs__img {
+        display: none;
     }
 
     .awesome {
@@ -1159,7 +1168,7 @@
     }
 
     .design__button, .contacts__button {
-        width: 90%;
+        width: 288px;
         height: 50px;
     }
 
