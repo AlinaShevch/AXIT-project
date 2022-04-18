@@ -400,6 +400,7 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #F5F5F5;
+    border-bottom: none;
 }
 
 .price__prices {
@@ -412,7 +413,7 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #F5F5F5;
-    margin-top: -1px;
+    border-bottom: none;
 }
 
 .price__price-subtitle, .price__list {
@@ -424,7 +425,7 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #F5F5F5;
-    margin-top: -1px;
+    border-bottom: none;
 }
 
 .price__price-subtitle {
