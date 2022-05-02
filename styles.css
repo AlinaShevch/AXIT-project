@@ -255,7 +255,6 @@
 }
 
 .tabs__block {
-    width: 60%;
     margin-right: 26px;
     padding-left: 100px;
 }
@@ -267,7 +266,6 @@
 }
 
 .tabs__text {
-    width: 80%;
     font-family: 'Raleway';
     font-size: 18px;
     margin-bottom: 27px;
@@ -709,12 +707,13 @@
         width: 156px;
     }
 
-    /* .tabs__container {  ничего не меняет
-        min-height: 385px;
-    } */ 
+    .tabs__container {
+        max-height: 385px;
+    }
 
     .tabs__block {
-        padding-left: 84px;
+        /* padding-left: 84px; */
+        padding-left: 4%;
     }
 
     .tabs__title {
@@ -734,7 +733,8 @@
     }
 
     .tabs__img {
-        height: 100%;
+        width: 40%;
+        max-height: 385px;
     }
 
     .awesome {
