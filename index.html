@@ -12,11 +12,11 @@
     <section class="header">
         <img class="header__logo" src="images banner/logo.png" alt="">
         <ul class="header__menu">
-            <li class="header__menu-list">Features</li>
-            <li class="header__menu-list">About</li>
-            <li class="header__menu-list">Pricing</li>
-            <li class="header__menu-list">Reviews</li>
-            <li class="header__menu-list">Contact</li>
+            <li class="header__menu-list"><a href="#features" class="header__link">Features</a></li>
+            <li class="header__menu-list"><a href="#about" class="header__link">About</a></li>
+            <li class="header__menu-list"><a href="#pricing" class="header__link">Pricing</a></li>
+            <li class="header__menu-list"><a href="#reviews" class="header__link">Reviews</a></li>
+            <li class="header__menu-list"><a href="#contact" class="header__link">Contact</a></li>
         </ul>
     </section>
     <section class="banner">
@@ -37,41 +37,44 @@
                         TRY YOUR <span class="banner__color">FREE</span> TRIAL TODAY
                     </p>
                 </div>
-                <ul class="banner__form-container">
+                <div class="banner__form-container">
                       <input class="banner__form-field" type="text" name="user_name" placeholder="Name">
                       <input class="banner__form-field" type="email" name="user_mail" placeholder="Email">
                       <input class="banner__form-field" type='password' name="user_password" placeholder="Password"></input>
-                </ul>
+                </div>
                 <button class="banner__form-button">Get Started</button>
             </form>
         </div>
     </section>
     <section class="social">
-        <h2 class="social__title">Social Media</h2>
-        <p class="social__subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenean euismod bibendum laoreet.
-        </p>
-        <div class="social__icon-container">
-            <i class="fa fa-facebook social__icon fa-4x" aria-hidden="true"></i>
-            <i class="fa fa-twitter social__icon fa-4x" aria-hidden="true"></i>
-            <i class="fa fa-linkedin-square social__icon fa-4x" aria-hidden="true"></i>
-            <i class="fa fa-pinterest social__icon fa-4x" aria-hidden="true"></i>
-            <i class="fa fa-instagram social__icon fa-4x" aria-hidden="true"></i>
-            <i class="fa fa-github social__icon fa-4x" aria-hidden="true"></i>
-            <i class="fa fa-rss social__icon fa-4x" aria-hidden="true"></i>
+        <div class="social__container">
+            <div class="social__block">
+                <h2 class="social__title">Social Media</h2>
+                <p class="social__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet.
+                </p>
+            </div>
+            <div class="social__icon-container">
+                <i class="fa fa-facebook fa-4x" id="social__icon" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-4x" id="social__icon" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square fa-4x" id="social__icon" aria-hidden="true"></i>
+                <i class="fa fa-pinterest fa-4x" id="social__icon" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-4x" id="social__icon" aria-hidden="true"></i>
+                <i class="fa fa-github fa-4x" id="social__icon" aria-hidden="true"></i>
+                <i class="fa fa-rss fa-4x" id="social__icon" aria-hidden="true"></i>
+            </div> 
         </div>
     </section>
-    <section class="tabs">
+    <section class="tabs" id="features">
         <div class="tabs__tabs-container">
             <button class="tabs__tab-title">TAB 1</p>
             <button class="tabs__tab-title">TAB 2</p> 
             <button class="tabs__tab-title">TAB 3</p>  
         </div>
         <div class="tabs__container">
-            <div class="tabs__title-wrapper">
-                <h3>Tabs with soft transitioning effect.</h3>
-            </div>
+        <div class="tabs__block">
+            <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
             <div class="tabs__text">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
@@ -89,8 +92,10 @@
             </div>
             <button class="tabs__button">Download</button>
         </div>
+            <img class="tabs__img" src="images tabs/image1.jpg" alt="">
+        </div>
     </section>
-    <section class="awesome">
+    <section class="awesome" id="about">
         <div class="awesome__title-wrapper">
             <h2 class="awesome__title">WHY THIS IS AWESOME</h2>
         </div>
@@ -129,7 +134,7 @@
             </div>
         </div>
     </section>
-    <section class="price">
+    <section class="price" id="pricing">
         <div class="price__title-wrapper">
             <h2 class="price__title">PRICING OPTIONS</h2>
         </div>
@@ -173,7 +178,7 @@
             </div>
         </div>
     </section>
-    <section class="customers">
+    <section class="customers" id="reviews">
         <div class="customers__title-wrapper">
             <h2 class="customers__title">WHAT OUR CUSTOMERS ARE SAYING</h2>
         </div>
@@ -239,7 +244,7 @@
         </p>
         <button class="design__button">Download</button>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contact">
         <div class="contacts__title-wrapper">
             <h2 class="contacts__title">CONTACT US</h2>
         </div>
@@ -261,13 +266,13 @@
     </section>
     <section class="footer">
         <div class="footer__icon-container">
-            <i class="fa fa-facebook footer__icon fa-3x" aria-hidden="true"></i>
-            <i class="fa fa-twitter footer__icon fa-3x" aria-hidden="true"></i>
-            <i class="fa fa-linkedin-square footer__icon fa-3x" aria-hidden="true"></i>
-            <i class="fa fa-pinterest footer__icon fa-3x" aria-hidden="true"></i>
-            <i class="fa fa-instagram footer__icon fa-3x" aria-hidden="true"></i>
-            <i class="fa fa-github footer__icon fa-3x" aria-hidden="true"></i>
-            <i class="fa fa-rss footer__icon fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-facebook fa-3x" id="footer__icon" aria-hidden="true"></i>
+            <i class="fa fa-twitter fa-3x" id="footer__icon" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square fa-3x" id="footer__icon" aria-hidden="true"></i>
+            <i class="fa fa-pinterest fa-3x" id="footer__icon" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-3x" id="footer__icon" aria-hidden="true"></i>
+            <i class="fa fa-github fa-3x" id="footer__icon" aria-hidden="true"></i>
+            <i class="fa fa-rss fa-3x" id="footer__icon" aria-hidden="true"></i>
         </div>
         <p class="footer__text">© 2015 Axure Themes</p>
     </section>
